@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --orange:#ffa500;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  /* overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth; */
+}
+
+section{
+  padding:2rem 9%;
+  background: #e2e2e2;
+}
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading .title span{
+  font-size: 3.5rem;
+  background:#e2e2e2;
+  /* color:var(--orange); */
+  color: #000;
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+}
+
+.main-menu{
+  padding: 2rem 9%;
+  text-align: center;
+  background: #e2e2e2;
+}
+
+.main-menu a{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+  color: #000;
+}
+
+.main-menu a i{
+  color:var(--orange);
+}
+
+/* Login>>> */
+.login-form-container{
+  position: fixed;
+  bottom: 0;
+  right: -120%;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background:rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container.active{
+  right: 0;
+}
+
+.login-form-container form{
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: .5rem;
+  background: url(../images/map3.png) no-repeat center / cover;
+  width: 500px;
+}
+
+.login-form-container form h3{
+  font-size: 3rem;
+  color:#444;
+  text-transform: uppercase;
+  text-align: center;
+  padding:1rem 0;
+}
+
+.login-form-container form .box{
+  width:100%;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  margin:.6rem 0;
+  border:.1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+}
+
+.login-form-container form .box:focus{
+  border-color: var(--orange);;
+}
+
+.login-form-container form #remember{
+  margin:2rem 0;
+}
+
+.login-form-container form label{
+  font-size: 1.5rem;
+}
+
+.login-form-container form .btn{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-form-container form p{
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:#666;
+}
+
+.login-form-container form p a{
+  color:var(--orange);
+}
+
+.login-form-container form p a:hover{
+  color:#333;
+  text-decoration: underline;
+}
+
+.login-form-container #form-close{
+  position: absolute;
+  top: 30%;
+  right: 35%;
+  font-size: 50px;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Uzbekistan>>>>>> */
+.uzbekistan p{
+  font-size: 17px;
+  color:#666;
+  padding: 12px;
+}
+
+.uzb_tour{
+  margin-bottom: 20px;
+}
+
+.uzb_tour .uzb_card .uzb_info{
+  /* margin: 20px 0 0 30px; */
+  font-size: 20px;
+}
+
+.uzb_tour .uzb_card .uzb_info label{
+    color: var(--orange);
+}
+
+.uzb_tour .uzb_card .uzb_info.second{
+    margin: 10px 116px 0 50px;
+}
+
+.uzb_tour .uzb_card .images.third{
+    margin: 10px -195px 0 200px;
+}
+
+.uzb_tour .uzb_card .images.fourth{
+    margin: 10px -195px 0 -25px;
+}
+
+.uzb_tour .uzb_card .uzb_info.fourth{
+    margin-right: 80px;
+}
+
+.uzb_tour .uzb_card .uzb_info.fifth{
+  width: 645px;
+  margin-right: 50px;
+}
+
+.uzb_tour .uzb_card .images.fifth{
+  margin-left: 30px;
+}
+
+.uzb_tour .uzb_card .uzb_info.sixth{
+    padding-right: 90px;
+}
+
+.uzb_tour .uzb_card .images.sixth{
+  margin-left: 30px;
+}
+
+.uzb_tour .uzb_card .images.seventh{
+    margin-left: 100px;
+}
+
+.uzb_tour .uzb_card .images.seventh img{
+    height: 224px;
+    border-radius: 5px;
+}
+
+
+.uzb_tour .uzb_card .uzb_info span{
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.uzb_tour .uzb_card .wblock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px white;
+}
+
+.uzb_tour .images{
+    display: flex;
+    flex: 0 0 7;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.uzb_tour .images img{
+    height: 300px;
+    margin: 7px;
+}
+
+/* <<<Footer>>> */
+.footer{
+  /* margin-top: 50px; */
+  background:#333;
+  position: relative;
+  width: 100%;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  margin-left: 30px;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+
+.footer .box-container .box h3 span{
+  color: #ffa500;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+  line-height: 30px;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--orange);
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:var(--orange);
+}
+
+/* Media queries  */
+@media (max-width:1200px){ 
+
+  html{
+    font-size: 55%;
+  }
+  
+  .uzb_tour .uzb_card .wblock{
+    flex-wrap: wrap;
+  }
+  
+  .uzb_tour .uzb_card .wblock .images{
+    margin-left: 25px;
+  }
+  
+  .uzb_tour .uzb_card .wblock .images img{
+    height: 180px;
+  }
+  
+  .uzb_tour .uzb_card .wblock p{
+    font-size: 18px;
+  }
+  
+  .uzb_tour .uzb_card .wblock p span{
+    font-size: 30px;
+  }
+  
+  .uzb_tour .uzb_card .wblock .images.fifth,
+  .uzb_tour .uzb_card .wblock .images.sixth{
+    order: 2;
+  }
+  
+  .uzb_tour .uzb_card .wblock .uzb_info.fifth,
+  .uzb_tour .uzb_card .wblock .uzb_info.sixth{
+    margin-left: 30px;
+  }
+
+  .uzb_tour .uzb_card .wblock .uzb_info.seventh{
+    margin-left: 50px;
+  }
+  
+  .uzb_tour .uzb_card .wblock .images.seventh{
+    margin-left: 50px;
+  }
+  
+} 
+
+@media (max-width:991px){
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+  .uzb_tour .uzb_card .uzb_info{
+    font-size: 15px;
+  }
+  
+  .uzb_tour .uzb_card .wblock .images img{
+    height: 161px;
+  }
+  
+} 
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading{
+    padding: 0;
+  }
+  
+  .heading span{
+    font-size: 27px;
+    gap: 15px 5px;
+  }
+  
+  .main-menu a{
+    display: none;
+  }
+  
+  .uzb_tour img{
+    display: none;
+  }
+  
+  .uzb_tour .uzb_card .uzb_info span{
+    font-size: 15px;
+  }
+  
+  .footer .box-container{
+    gap: 0;
+  }
+  
+  .uzb_tour .uzb_card .uzb_info.second {
+    margin: 0;
+  }
+}
