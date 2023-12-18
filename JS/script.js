@@ -9,7 +9,7 @@ const videoBtn = document.querySelectorAll('.vid-btn')
 
 const mass = [
     {
-        email: "nurali@gmail.com",
+        email: "odilbek@gmail.com",
         password: "123456"
     }
 ];
